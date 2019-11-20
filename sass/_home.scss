@@ -1,0 +1,61 @@
+// HOME //
+
+.home {
+
+    background-color: $color__background-body;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+
+  .site-main {
+    .post {
+      .entry-meta {
+        .source {
+          display: none;
+        }
+      }
+    }
+  }
+
+  button {
+    background-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    color: $color__text-alt;
+    border-color: $color__text-alt;
+    padding: 0.75rem 2.25rem;
+    font-size: $font__size + 0.3;
+    font-weight: 700;
+    border: 2px solid $color__text-alt;
+    border-radius: 3px;
+    margin: 20px;
+
+    &:hover {
+      background-color: $color__text-alt;
+      color: $color__background-body;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    .main-navigation {
+      .menu-main-menu-container {
+        ul {
+          display: flex;
+
+          li {
+            padding: 10px;
+
+            a {
+              color: $color__text-alt;
+              font-size: $font__size;
+            }
+          }
+        }
+      }
+    }
+  }
+}
