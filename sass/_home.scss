@@ -1,12 +1,8 @@
 // HOME //
 
 .home {
-
-    background-color: $color__background-body;
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
-
   .site-main {
     .post {
       .entry-meta {
@@ -28,34 +24,11 @@
     font-weight: 700;
     border: 2px solid $color__text-alt;
     border-radius: 3px;
-    margin: 20px;
-
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     &:hover {
       background-color: $color__text-alt;
       color: $color__background-body;
-    }
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: auto;
-    .main-navigation {
-      .menu-main-menu-container {
-        ul {
-          display: flex;
-
-          li {
-            padding: 10px;
-
-            a {
-              color: $color__text-alt;
-              font-size: $font__size;
-            }
-          }
-        }
-      }
     }
   }
 }

@@ -23,7 +23,6 @@
 			<header id="masthead" class="site-header" role="banner">
 			<img class="full-logo" src="<?= get_stylesheet_directory_uri(); ?>/assets/qod-logo.svg" alt="logo"/>
 
-
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

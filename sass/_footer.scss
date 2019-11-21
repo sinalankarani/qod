@@ -1,8 +1,31 @@
 // HOME //
 
 footer {
-  position: absolute;
-  bottom: 0;
+  margin-top: 40px;
   width: 100%;
-  margin: auto;
+  .main-navigation {
+    .menu-main-menu-container {
+      .menu {
+      }
+      ul {
+        display: flex;
+        li {
+          a {
+            padding-right: 20px;
+            padding-bottom: 10px;
+            color: $color__text-alt;
+            font-size: $font__size;
+            &:after {
+              padding-left: 10px;
+              color: $color__text-main;
+              content: '\007C';
+              &:last-child {
+                content: ''
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

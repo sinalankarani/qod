@@ -39,7 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200&display=swap");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -239,9 +239,23 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 22.4px; }
+
+h3 {
+  font-size: 16px; }
+
 /* Text */
 p {
+  font-size: 20.8px;
   margin-bottom: 1.5rem; }
+
+a {
+  color: #00cc00;
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -249,7 +263,9 @@ p {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin: 1rem;
+  padding-top: 2rem; }
 
 *,
 *:before,
@@ -495,14 +511,12 @@ object {
 /* All Archives Page */
 /* Submit a Quote Page */
 .home {
-  background-color: #222222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 2rem; }
+          justify-content: space-between; }
   .home .site-main .post .entry-meta .source {
     display: none; }
   .home button {
@@ -513,25 +527,31 @@ object {
     color: #00cc00;
     border-color: #00cc00;
     padding: 0.75rem 2.25rem;
-    font-size: 1.3rem;
+    font-size: 16.3px;
     font-weight: 700;
     border: 2px solid #00cc00;
     border-radius: 3px;
-    margin: 20px; }
+    margin-top: 2rem;
+    margin-bottom: 4rem; }
     .home button:hover {
       background-color: #00cc00;
       color: #222222; }
-  .home footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: auto; }
-    .home footer .main-navigation .menu-main-menu-container ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .home footer .main-navigation .menu-main-menu-container ul li {
-        padding: 10px; }
-        .home footer .main-navigation .menu-main-menu-container ul li a {
-          color: #00cc00;
-          font-size: 1rem; }
+
+footer {
+  margin-top: 40px;
+  width: 100%; }
+  footer .main-navigation .menu-main-menu-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .main-navigation .menu-main-menu-container ul li a {
+      padding-right: 20px;
+      padding-bottom: 10px;
+      color: #00cc00;
+      font-size: 16px; }
+      footer .main-navigation .menu-main-menu-container ul li a:after {
+        padding-left: 10px;
+        color: #fff;
+        content: '\007C'; }
+        footer .main-navigation .menu-main-menu-container ul li a:after:last-child {
+          content: ''; }

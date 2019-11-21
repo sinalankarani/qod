@@ -6,14 +6,15 @@ $base__space-unit: 1.5rem;
 
 $color__background-body: #222222;
 $color__text-main: #fff;
-
 $color__text-alt: #00cc00;
-
-$color__link: royalblue;
-$color__link-hover: midnightblue;
 
 // Typography
 
 $font__main: 'Exo 2', sans-serif;
-$font__size: 1rem;
+$font__size: 16px;
 $font__line-height-body: 1.5;
+
+// Media Size
+
+$tablet-width: 620px;
+$desktop-width: 1080px;
