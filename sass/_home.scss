@@ -1,34 +1,49 @@
 // HOME //
 
+@include desktop;
+@include tablet;
+
 .home {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
   .site-main {
-    .post {
+
+    article {
+      font-weight: bold;
+
+      .entry-content {
+        font-size: $font__size * 1.4;
+      }
       .entry-meta {
-        .source {
-          display: none;
+        display: flex;
+        font-size: $font__size * 1.2;
+
+        div {
+          .source {
+            // padding-left: 5px;
+            color: $color__text-alt;
+          }
         }
       }
     }
-  }
-
-  button {
-    background-color: transparent;
-    box-shadow: none;
-    text-shadow: none;
-    color: $color__text-alt;
-    border-color: $color__text-alt;
-    padding: 0.75rem 2.25rem;
-    font-size: $font__size + 0.3;
-    font-weight: 700;
-    border: 2px solid $color__text-alt;
-    border-radius: 3px;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    &:hover {
-      background-color: $color__text-alt;
-      color: $color__background-body;
+    button {
+      background-color: transparent;
+      box-shadow: none;
+      text-shadow: none;
+      color: $color__text-alt;
+      border-color: $color__text-alt;
+      padding: 0.75rem 2.25rem;
+      font-size: $font__size * 1.1;
+      font-weight: bold;
+      border: 2px solid $color__text-alt;
+      border-radius: 3px;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      &:hover {
+        background-color: $color__text-alt;
+        color: $color__background-body;
+      }
     }
   }
 }

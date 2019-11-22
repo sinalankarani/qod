@@ -1,8 +1,13 @@
-// HOME //
+// FOOTER //
+
+@include desktop;
+@include tablet;
 
 footer {
   margin-top: 40px;
   width: 100%;
+  display: flex;
+
   .main-navigation {
     .menu-main-menu-container {
       .menu {
@@ -19,8 +24,12 @@ footer {
               padding-left: 10px;
               color: $color__text-main;
               content: '\007C';
-              &:last-child {
-                content: ''
+            }
+          }
+          &:last-child {
+            a {
+              &:after {
+                content: '';
               }
             }
           }

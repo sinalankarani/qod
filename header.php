@@ -21,7 +21,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-			<img class="full-logo" src="<?= get_stylesheet_directory_uri(); ?>/assets/qod-logo.svg" alt="logo"/>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="full-logo" src="<?= get_stylesheet_directory_uri(); ?>/assets/qod-logo.svg" alt="logo"/></a>
 
 			</header><!-- #masthead -->
 

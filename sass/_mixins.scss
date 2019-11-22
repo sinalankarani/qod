@@ -1,20 +1,121 @@
 // Tablet
+
 @mixin tablet {
-	@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+	  body {
+		  .site-main {
+
+			p {
+				font-size: $font__size * 2;
+			}
+			.entry-meta {
+				.source {
+					font-size: $font__size * 1.4;
+
+				}
+			}
+			.entry-title {
+				font-size: $font__size * 1.4;
+			}
+			button {
+				font-size: $font__size * 1.2;
+			}
+		  }
+	  }
 	}
-  }
+}
 
 // Desktop
-  @mixin desktop {
-	@media (min-width: $desktop-width) {
-	}
-  }
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    body {
+      margin: 0 auto;
+      width: 100%;
+	  padding: 2.5%;
+	  
+	  header {
+		justify-content: center;
+		.full-logo {
+		  width: 700px;
+		}
+	  }
 
+      .site-main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        button {
+          background-color: transparent;
+          box-shadow: none;
+          text-shadow: none;
+          color: $color__text-alt;
+          border-color: $color__text-alt;
+          padding: 0.75rem 2.25rem;
+		  font-size: $font__size * 1.4;
+          font-weight: 700;
+          border: 2px solid $color__text-alt;
+          border-radius: 3px;
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+          width: 250px;
+          margin: 0 auto;
+        }
+
+        p {
+          font-size: $font__size * 2.5;
+        }
+        article {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 auto;
+          .entry-content {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            p {
+			  padding: 20px;
+			  font-size: $font__size * 2.5;
+              align-self: center;
+            }
+
+            width: 100%;
+            &:before {
+              padding: 20px;
+              color: $color__text-alt;
+              font-family: 'FontAwesome';
+              font-size: $font__size * 7;
+              font-weight: 900;
+              content: '\f10d';
+            }
+            &:after {
+              padding: 20px;
+              color: $color__text-alt;
+              font-family: 'FontAwesome';
+              font-size: $font__size * 7;
+              font-weight: 900;
+              content: '\f10e';
+            }
+          }
+          .entry-meta {
+            margin-left: 200px;
+          }
+        }
+      }
+      footer {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
