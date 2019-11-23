@@ -19,3 +19,16 @@ html {
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
+
+.number-pagination {
+  a {
+    padding: 10px;
+  }
+  span {
+    padding: 10px;
+  }
+}
+.entry-meta {
+  display: flex;
+
+}

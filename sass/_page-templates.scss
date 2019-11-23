@@ -4,4 +4,54 @@
 
 /* All Archives Page */
 
+.archive {
+    .entire-quote {
+        border-top: 1px dotted #fff;
+        margin-bottom: 20px;
+    }
+}
+
+.error404 {
+    .site-content {
+        display: flex;
+        
+        &:before {
+            padding: 20px;
+            color: $color__text-alt;
+            font-family: 'FontAwesome';
+            font-size: $font__size * 7;
+            font-weight: 900;
+            content: '\f10d';
+          }
+          &:after {
+            padding: 20px;
+            color: $color__text-alt;
+            font-family: 'FontAwesome';
+            font-size: $font__size * 7;
+            font-weight: 900;
+            content: '\f10e';
+          }
+          .search-field {
+            background-color: transparent;
+            border: 2px solid #0c0;
+            border-radius: 3px;
+              width: 240px;
+              font-size: 1.25rem;
+          }
+          .search-submit {
+              background-color: transparent;
+              border: none;
+            &:after {
+                padding: 10px;
+                color: $color__text-alt;
+                font-family: 'FontAwesome';
+                font-size: $font__size * 2;
+                background-color: transparent;
+                content: '\f002';
+              }
+              
+          }
+    }
+}
+
 /* Submit a Quote Page */

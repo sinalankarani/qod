@@ -60,3 +60,17 @@ add_filter( 'enter_title_here', 'qod_change_title_here_text' );
 	}
  }
  add_action( 'pre_get_posts', 'qod_modify_archives' );
+
+ function qod_body_classes( $classes ) {
+    // Adds a class of group-blog to blogs with more than 1 published author.
+    if ( is_multi_author() ) {
+        $classes[] = 'group-blog';
+    }
+    if ( is_singular( 'page' ) ) {
+        global $post;
+        $classes[] = 'page-' . $post->post_name;
+    }
+
+    return $classes;
+}
+add_filter( 'body_class', 'qod_body_classes' );
