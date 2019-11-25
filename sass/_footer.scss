@@ -6,12 +6,13 @@
 footer {
   margin-top: 40px;
   width: 100%;
-  display: flex;
 
+  
+  .site-footer {
+  }
   .main-navigation {
+    width: 100%;
     .menu-main-menu-container {
-      .menu {
-      }
       ul {
         display: flex;
         li {
