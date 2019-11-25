@@ -1,23 +1,34 @@
-# Quotes on Dev Starter
+Quotes on Dev Starter
+A website that contains quotes on Web Development, a WordPress starter theme forked from Underscores (https://underscores.me/)
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Preview
 
-## Installation
+PHP MySql WordPress jQquery
 
-### 1. Download me (don't clone me!)
+Features
 
-Then add me to your `wp-content/themes` directory.
+1. pre_get_posts action hook
 
-### 2. Rename the `quotesondev-starter-master` directory
+Show a new random quote as the website loads
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+Every time the "Show New Quote" button is clicked it fetches a new random post on the homepage using the WP REST API
 
-### 3. Install the dev dependencies
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+2. WordPress API with wp_localize_script() & AJAX
 
-### 4. Update the proxy in `gulpfile.js`
+Make any data available to JavaScript from the server side of WordPress
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+Usage
 
-And now would be a good time to `git init` :)
+Add the action hook to enqueue scripts and add qod_scripts() function
+
+
+Practice : Fetch a new random post on the homepage on a button click using the WP REST API
+
+
+3. Post submission with wp-api
+
+Create a post using HTML form element, WordPress API, and AJAX
+
+4. Responsive webpage for mobile, tablet and desktop with eparate SASS partials for footer, header, page templates, etc.
+

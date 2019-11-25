@@ -2,26 +2,25 @@
 
 @mixin tablet {
   @media (min-width: $tablet-width) {
-	  body {
-		  .site-main {
-
-			p {
-				font-size: $font__size * 1.6;
-			}
-			.entry-meta {
-				.source {
-					font-size: $font__size * 1.4;
-				}
-			}
-			.entry-author {
-				font-size: $font__size * 1.4;
-			}
-			button {
-				font-size: $font__size * 1.2;
-			}
-		  }
-	  }
-	}
+    body {
+      .site-main {
+        p {
+          font-size: $font__size * 1.6;
+        }
+        .entry-meta {
+          .source {
+            font-size: $font__size * 1.4;
+          }
+        }
+        .entry-author {
+          font-size: $font__size * 1.4;
+        }
+        button {
+          font-size: $font__size * 1.2;
+        }
+      }
+    }
+  }
 }
 
 // Desktop
@@ -30,14 +29,14 @@
     body {
       margin: 0 auto;
       width: 100%;
-	  padding: 2.5%;
-	  
-	  header {
-		justify-content: center;
-		.full-logo {
-		  width: 700px;
-		}
-	  }
+      padding: 2.5%;
+
+      header {
+        justify-content: center;
+        .full-logo {
+          width: 700px;
+        }
+      }
 
       .site-main {
         width: 100%;
@@ -46,7 +45,7 @@
         flex-direction: column;
 
         button {
-		  font-size: $font__size * 1.4;
+          font-size: $font__size * 1.4;
           font-weight: 700;
           border: 2px solid $color__text-alt;
           margin: 0 auto;
@@ -66,8 +65,8 @@
             justify-content: center;
             margin: 20px;
             p {
-			  padding: 20px;
-			  font-size: $font__size * 2.5;
+              padding: 20px;
+              font-size: $font__size * 2.5;
               align-self: center;
             }
 
@@ -98,51 +97,49 @@
         display: flex;
         justify-content: flex-end;
       }
-	}
-	.page-archives {
-		.site-content {
-			display: flex;
-			margin: 1.5rem;
-			// justify-content: center;
-			// position: relative;
-			&:before {
-				padding: 20px;
-				color: $color__text-alt;
-				font-family: 'FontAwesome';
-				font-size: $font__size * 7;
-				font-weight: 100;
-				content: '\f10d';
-			  }
-			  &:after {
-				padding: 20px;
-				color: $color__text-alt;
-				font-family: 'FontAwesome';
-				font-size: $font__size * 7;
-				font-weight: 100;
-				content: '\f10e';
-			  }
-		}
-		.archive {
-			.site-main {
-				&:before {
-					padding: 20px;
-					color: $color__text-alt;
-					font-family: 'FontAwesome';
-					font-size: $font__size * 7;
-					font-weight: 900;
-					content: '\f10d';
-				  }
-				  &:after {
-					padding: 20px;
-					color: $color__text-alt;
-					font-family: 'FontAwesome';
-					font-size: $font__size * 7;
-					font-weight: 900;
-					content: '\f10e';
-				  }
-			}
-		}
-	}
+    }
+    .page-archives {
+      .site-content {
+        display: flex;
+        margin: 1.5rem;
+
+        &:before {
+          padding: 20px;
+          color: $color__text-alt;
+          font-family: 'FontAwesome';
+          font-size: $font__size * 7;
+          font-weight: 100;
+          content: '\f10d';
+        }
+        &:after {
+          padding: 20px;
+          color: $color__text-alt;
+          font-family: 'FontAwesome';
+          font-size: $font__size * 7;
+          font-weight: 100;
+          content: '\f10e';
+        }
+      }
+      .archive {
+        .site-main {
+          &:before {
+            padding: 20px;
+            color: $color__text-alt;
+            font-family: 'FontAwesome';
+            font-size: $font__size * 7;
+            font-weight: 900;
+            content: '\f10d';
+          }
+          &:after {
+            padding: 20px;
+            color: $color__text-alt;
+            font-family: 'FontAwesome';
+            font-size: $font__size * 7;
+            font-weight: 900;
+            content: '\f10e';
+          }
+        }
+      }
+    }
   }
 }
-

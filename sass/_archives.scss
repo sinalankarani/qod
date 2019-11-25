@@ -4,17 +4,17 @@
   .site-content {
     width: 100%;
     h1 {
-        font-size: $font__size * 2;
+      font-size: $font__size * 2;
     }
     h2 {
-        font-size: $font__size * 1.5;
+      font-size: $font__size * 1.5;
     }
     .clearfix {
-        justify-content: flex-start;
+      justify-content: flex-start;
     }
 
     .entry-header {
-        justify-content: flex-start;
+      justify-content: flex-start;
     }
     ul {
       list-style: none;
@@ -29,9 +29,9 @@
       font-size: $font__size * 1.2;
 
       li {
-        margin-bottom: .5rem;
-        margin-right: 1.2rem;     
-    }
+        margin-bottom: 0.5rem;
+        margin-right: 1.2rem;
+      }
     }
   }
 }
